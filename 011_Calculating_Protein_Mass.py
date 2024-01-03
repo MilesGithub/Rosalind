@@ -19,8 +19,8 @@ def protein_weight(protein_string):
   }
   
   total_weight = 0.0
-  for aa in protein_string:
-    total_weight += monoisotopic_mass.get(aa, 0.0)
+  for amino_acid in protein_string:
+    total_weight += monoisotopic_mass.get(amino_acid, 0.0)
   
   return total_weight
 
