@@ -32,9 +32,7 @@ def create_profile_matrix(dna_strings):
     return profile_matrix
 
 def consensus_string(profile_matrix):
-    # Get the index of the maximum value for each column
     max_indices = np.argmax(profile_matrix, axis=0)
-    # Map indices to nucleotides
     consensus = ''.join(['ACGT'[index] for index in max_indices])
 
     return consensus
